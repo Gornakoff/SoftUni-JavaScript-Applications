@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "5830a171e6d36805290e959f",
+    "_acl": {
+      "creator": "kid_rkBtiGRWe"
+    },
+    "author": "Nakov",
+    "title": "C# Fundamentals",
+    "_kmd": {
+      "lmt": "2016-11-19T19:01:05.272Z",
+      "ect": "2016-11-19T19:01:05.272Z"
+    }
+  },
+  {
+    "_id": "5830a189b3778b4f188fb06a",
+    "_acl": {
+      "creator": "kid_rkBtiGRWe"
+    },
+    "author": "Vazov",
+    "title": "Under the Yoke",
+    "_kmd": {
+      "lmt": "2016-11-19T19:01:29.558Z",
+      "ect": "2016-11-19T19:01:29.558Z"
+    }
+  },
+  {
+    "_id": "5830a4583559c52d31acced5",
+    "author": "Nik",
+    "title": "New post.",
+    "_acl": {
+      "creator": "58309c6c790b89aa15ce8316"
+    },
+    "_kmd": {
+      "lmt": "2016-11-19T19:13:28.423Z",
+      "ect": "2016-11-19T19:13:28.423Z"
+    }
+  }
+]
