@@ -5,24 +5,23 @@ function loadRepos() {
 
     let request = {
         method: 'GET',
-        url: `${linkUrl}`,
-        contentType: 'application/json',
+        url: linkUrl,
         success: displayRepos,
         error: displayError
     };
 
     $.ajax(request);
 
+
     function displayRepos(reps) {
         for (let repo of reps) {
-            let link = $('<a>').text(repo.full_name);
-            link.attr('href', repo.html_url);
-            $('#repos').append($('<li>').append(link));
+            let link = $(`<li><a href="${repo.html_url}">${repo.full_name}</a></li>`);
+            $('#repos').append(link);
         }
     }
 
     function displayError() {
-        let text = $('<li>').text('Error');
+        let text = $('<li>').append('Error');
         $('#repos').append(text);
     }
 }
