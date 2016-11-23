@@ -60,11 +60,12 @@ function attachEvents() {
         let data = extractData(currentData);
 
         let div = $('#current');
+        let span = $('<span>').prop('class', 'forecast-data');
         div.append($('<span>').prop('class', 'condition symbol').append(data.symbol))
             .append($('<span>').prop('class', 'condition')
-            .append($('<span>').prop('class', 'forecast-data').append(name))
-            .append($('<span>').prop('class', 'forecast-data').append(data.temp))
-            .append($('<span>').prop('class', 'forecast-data').append(data.condition)));
+            .append(span.clone().append(name))
+            .append(span.clone().append(data.temp))
+            .append(span.clone().append(data.condition)));
     }
 
     function displayUpcomingWeather(upcomingInfo) {
@@ -73,10 +74,11 @@ function attachEvents() {
         for (let day of weatherData) {
             let data = extractData(day);
             let div = $('#upcoming');
+            let span = $('<span>').prop('class', 'forecast-data');
             div.append($('<span>').prop('class', 'upcoming')
                     .append($('<span>').prop('class', 'symbol').append(data.symbol))
-                    .append($('<span>').prop('class', 'forecast-data').append(data.temp))
-                    .append($('<span>').prop('class', 'forecast-data').append(data.condition)));
+                    .append(span.clone().append(data.temp))
+                    .append(span.clone().append(data.condition)));
         }
     }
 
