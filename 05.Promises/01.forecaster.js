@@ -47,6 +47,8 @@ function attachEvents() {
     }
 
     function displayWeather([current, upcoming]) {
+        $('.condition').remove();
+        $('.upcoming').remove();
         $('#forecast').removeAttr('style');
         displayCurrentWeather(current);
         displayUpcomingWeather(upcoming);
